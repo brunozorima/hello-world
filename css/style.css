@@ -1,0 +1,168 @@
+/*
+Please ignore the !important tags for now - I imported the Bootstrap library and it magically made everything look
+so nice. The downside is that it overrides some of my own styles - so I quickly fixed them by adding !important. CSS gods please look away.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    margin-top: 5% !important;
+}
+
+#container {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.column {
+    text-align: center;
+}
+
+#projects > ul {
+    list-style: none;
+    padding-top: 5px;
+    padding-left: 0;
+}
+
+#footer {
+    text-align: center;
+    color: #999999;
+    font-size: 95%;
+}
+
+#profile-photo {
+    width: 200px;
+    /*height: 200px;*/
+    margin-bottom: 16px;
+}
+
+.circle-image {
+    border-radius: 50%;
+}
+
+#col-left > p > a {
+    padding-right: 4px;
+}
+
+#projects > ul > li {
+    padding-bottom: 5px;
+}
+
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+@media (min-width: 600px) {
+    hr {
+        visibility: visible !important;
+        /*background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.75), rgba(0,0,0,0.75), rgba(0,0,0,0));
+        background-image:    -moz-linear-gradient(left, rgba(0,0,0,0.75), rgba(0,0,0,0.75), rgba(0,0,0,0));
+        background-image:     -ms-linear-gradient(left, rgba(0,0,0,0.75), rgba(0,0,0,0.75), rgba(0,0,0,0));
+        background-image:      -o-linear-gradient(left, rgba(0,0,0,0.75), rgba(0,0,0,0.75), rgba(0,0,0,0));*/
+        text-align: left;
+    }
+    #profile-photo {
+        max-width: 100%;
+        height: auto;
+        width: 280px; /* default size, before resizing with the browser */
+    }
+
+    .row:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+    .column {
+        box-sizing: border-box;
+        float: left;
+    }
+
+    #col-left {
+        width: 30%;
+        padding: 0 20px;
+    }
+
+    #col-right {
+        width: 70%;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    #container {
+        width: 65%;
+    }
+
+    #projects > ul {
+        padding-left: 40px;
+        list-style: disc;
+    }
+
+    #footer {
+        position: fixed;
+        bottom: 0;
+        text-align: right;
+        color: #999999;
+        width: 98%;
+    }
+
+    /*
+            This should dynamically resize with the browser.
+    */
+    .tagLine {
+        font-size: 150%;
+    }
+
+
+}
+
+@media (max-width: 1300px) {
+    #container {
+        width: 100%;
+    }
+}
+
+h1 {
+    margin-top: 2.5% !important;
+    margin-bottom: 0 !important;
+    font-size: 300%;
+    font-weight: 500;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
+
+p {
+    margin-top: 0px;
+}
+
+hr {
+    visibility: hidden;
+    border: 0;
+    height: 1px;
+    width: 75%;
+    margin-left: 0;
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+}
+.tag{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: black;
+    border-radius: 5%;
+}
+.tagLine {
+    font-size: 130%;
+    margin-top: 3px;
+}
